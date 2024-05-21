@@ -37,7 +37,7 @@ body {
 
 #emoji {
   font-size: 10rem;
-  filter: grayscale(1);
+  /* filter: grayscale(1); */
   cursor: pointer;
   transition-property: transform, filter;
   transition-duration: 200ms;
@@ -53,4 +53,30 @@ body {
 
 .heading {
   color: white;
+}
+
+.click-me {
+  margin-top: 20px;
+  background: linear-gradient(to right, #435978, #78909c);
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.click-me:hover {
+  background: linear-gradient(to right, #78909c, #435978);
+  transform: scale(1.02);
+}
+
+.click-me::after {
+  /* content: "\1F911"; */
+  margin-left: 10px;
+  font-size: 1.2em;
 }
